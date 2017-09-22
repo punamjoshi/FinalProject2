@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="com.niit.configuration.AppConfig"/>
+<fullyQualifiedTypeName name="com.niit.model.Jobs"/>
+<fullyQualifiedTypeName name="junit.framework.TestCase"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="com.niit.dao.UsersDaoImpl"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.junit.Ignore"/>
+<fullyQualifiedTypeName name="com.sun.net.httpserver.Authenticator.Success"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="com.niit.configuration.WebConfig"/>
+<fullyQualifiedTypeName name="com.niit.dao.BlogPostDao"/>
+<fullyQualifiedTypeName name="com.niit.model.BlogPost"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.niit.model.Users"/>
+<fullyQualifiedTypeName name="com.niit.dao.UsersDao"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,45 @@
+
+label
+{
+  font-size: 18;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  color: white;
+}@CHARSET "ISO-8859-1";
+
+ input[type=text], input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+    }
+    
+.cancelbtn {
+color: white;
+    padding: 15px 50px;
+    margin: 30px 0;
+    border: none;
+    cursor: pointer;
+   background-color: #f44336;
+    width:20%;
+     
+} 
+div.gallery img {
+    width: 70%;
+    height: 400px;
+  
+}
+.signupbtn {
+color: white;
+    padding: 15px 50px;
+    margin: 30px 0;
+    border: none;
+    cursor: pointer;
+background-color: #4CAF50;
+    float: center;
+    width: 20%;
+}

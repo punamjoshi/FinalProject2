@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<link rel="stylesheet" href="css/mycss.css" type="text/css">
+<title>Insert title here</title>
+
+</head>
+<style>
+
+
+</style>
+
+<body>
+
+<form> <!-- action="perform_login" method="post"> -->
+
+<div class="row">
+<div class="col-md-6">
+<!-- <div class="gallery">
+  <img src="images\Lock.png">
+</div> -->
+</div>
+<div class="col-md-6">
+<div class="container" ng-controller="UserController">
+           
+  <br><br>
+				<label for="name">Username</label><br>
+				<input type="text" ng-model="user.username"  placeholder="Enter username here">&nbsp;&nbsp;&nbsp;
+			<br>
+				<label for="password">Password</label><br>
+				<input type="password" ng-model="user.password"  placeholder="Enter password here"><br>
+				
+				
+			
+				<input type="submit" class="signupbtn"  value="Login" ng-click="login()">
+				<input type="button" class="cancelbtn" value="Cancel">&nbsp;&nbsp;&nbsp;
+				<h4><b><u><a href="#/registration">New user? Sign up</a></u></b></h4>
+				<!-- <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" /><br>
+				<h4><b><u><a href="#/registration">New user? Sign up</a></u></b></h4>
+				<h6><a href="forgotpass">forgot password?</a></h6> -->
+	
+		</div>
+		</div>
+		</div>
+
+
+	</form>
+</body>
+</html>
+
+
+
+

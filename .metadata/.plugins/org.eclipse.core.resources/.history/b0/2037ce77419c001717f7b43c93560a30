@@ -1,0 +1,20 @@
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.sun.net.httpserver.Authenticator.Success;
+
+public class usertest {
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		
+	}
+
+	@Test
+	public void test() {
+		
+	}
+
+}

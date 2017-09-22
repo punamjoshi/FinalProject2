@@ -1,0 +1,9 @@
+import junit.framework.TestCase;
+
+public class test extends TestCase {
+
+	public test(String name) {
+		super(name);
+	}
+          
+}

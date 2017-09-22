@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="css/mycss.css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Register</title>
+
+
+
+
+<style>
+input[type=text], input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.cancelbtn {
+color: white;
+    padding: 15px 40px;
+    margin: 30px 0;
+    border: none;
+    cursor: pointer;
+   background-color: #f44336;
+    width:30%;
+} 
+.signupbtn {
+color: white;
+    padding: 15px 20px;
+    margin: 30px 0;
+    border: none;
+    cursor: pointer;
+background-color: #4CAF50;
+    float: center;
+    width: 30%;
+}
+
+</style>
+
+</head>
+
+<body background ="images\login.jpg">
+
+<!-- <script type="text/javascript">
+function checkPass()
+{
+	var x=document.getElementById("pass").value;
+	var y=document.getElementById("cpass").value;
+	if(x!=y)
+	{
+		alert("both passwords should be same");
+		return false;
+	}
+	
+	else
+		{
+		 alert("Your registration has been completed successfully");
+		
+		}
+	
+	}
+</script> -->
+
+<form> <!-- action="user" method="POST" onsubmit="return checkPass()"> -->
+
+<div class="container" STYLE="">
+<p align="center">
+<label><font color="red"> *All fields are Necessary*</font></label><br></p>
+<label>First Name</label><br>
+<input type="text" ng-model="user.firstname" placeholder="Enter firstname"><br>
+<label>Last Name</label><br>
+<input type="text" ng-model="user.lastname" placeholder="Enter lastname"><br>
+<!-- <label>User Name-*Generate new user name</label><br>
+<input type="text" name="uname"  required><br> -->
+
+<label>Email Id</label><br>
+<input type="text" ng-model="user.email" placeholder="email"><br>
+
+<label>Username</label><br>
+<input type="text" ng-model="user.username"><br>
+<label> Password</label><br>
+<input type="password" id=pass ng-model="user.password"><br>
+
+<!-- <label>Confirm password</label><br>
+<input type="password" id="cpass" name="confirmpass"><br> -->
+
+<label>Role</label><br>
+<input type="radio" ng-model="user.role" value="Student">Student
+<input type="radio" ng-model="user.role" value="Alumini">Alumini
+<input type="radio" ng-model="user.role" value="Employee">Employee<br>
+
+
+
+
+</div>
+<center>
+<!-- <h4><input type="checkbox" checked="checked">I Agree<a href="#"><u>Terms and Privacy.</u></a></h3> -->
+<input type="button" class="cancelbtn" value="Cancel">&nbsp;&nbsp;&nbsp;
+<input type="submit" class="signupbtn"  ng-click="register()"><center>
+
+		
+</form>
+
+   
+    
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="C-_Users_mruser_Desktop_Desktop Items_Punam Project2 Data_apache-tomcat-8.0.33" id-set\="true" location\="C\:/Users/mruser/Desktop/Desktop Items/Punam Project2 Data/apache-tomcat-8.0.33" name\="apache-tomcat-8.0.33" runtime-type-id\="org.eclipse.jst.server.tomcat.runtime.80" timestamp\="0" vm-install-id\="1501749801960" vm-install-type-id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType"/>\r\n</runtimes>\r\n

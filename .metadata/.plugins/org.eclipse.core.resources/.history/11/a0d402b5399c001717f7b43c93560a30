@@ -1,0 +1,81 @@
+import static org.junit.Assert.*;
+
+import java.util.List;
+
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.dao.UsersDao;
+import com.niit.model.Users;
+
+public class UserTestCase extends TestCase{
+
+static UsersDao usersDAO;
+	
+	
+	@BeforeClass
+	public static void initialize()
+	{
+		AnnotationConfigApplicationContext annotationConfigApplicationContext= new AnnotationConfigApplicationContext();
+		annotationConfigApplicationContext.scan("com.niit");
+		annotationConfigApplicationContext.refresh();
+		usersDAO=(UsersDao)annotationConfigApplicationContext.getBean("UsersDAO");
+		
+	}
+	
+	
+	@Test
+	public void createUserTest()
+	{
+		Users users= new Users();
+		users.setUsername("PunamS");
+		users.setEmail("punam@gmail.com");
+		users.setFirstname("poonam");
+		users.setLastname("kulkarni");
+		users.setPassword("abcd");
+		users.setRole("User");
+		
+		users.setOnline(false);
+		users.setEnabled(true);
+		assertTrue("Problem in user creation",usersDAO.registration(users));
+		
+	}
+	
+	
+	
+
+	
+	
+	
+	@Ignore
+	@Test 
+	public void getUserTestCase()
+	{
+		boolean res=false;
+		if(usersDAO.getUserByUsername("pooja@gmail.com")!=null){
+			res=true;
+		}
+		assertTrue("Problem in getting user by id",res);
+		
+	}
+	
+	@Ignore
+	@Test 
+	public void getUserListTestCase()
+	{
+		List<Users> listusers=usersDAO.getAllUsers();
+		System.out.println(listusers.size());
+		assertTrue("Problem in getting the list",listusers.size()>0);
+		
+	}
+	
+	
+	
+
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

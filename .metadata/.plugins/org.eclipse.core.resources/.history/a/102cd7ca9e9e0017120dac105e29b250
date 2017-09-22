@@ -1,0 +1,24 @@
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.dao.BlogPostDao;
+import com.niit.dao.UsersDao;
+
+public class BlogDaoTestCase {
+
+	static BlogPostDao blogPostDao;
+	@BeforeClass
+	public static void initialize()
+	{
+		AnnotationConfigApplicationContext annotationConfigApplicationContext= new AnnotationConfigApplicationContext();
+		annotationConfigApplicationContext.scan("com.niit");
+	
+		annotationConfigApplicationContext.refresh();
+		blogPostDao=(BlogPostDao)annotationConfigApplicationContext.getBean("UsersDao");
+		
+	}
+
+}

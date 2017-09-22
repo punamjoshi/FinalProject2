@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;themes&apos;&#x0D;&#x0A;- Original project: &apos;MyApp&apos;&#x0D;&#x0A;- Destination element: &apos;themes&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     explorer&#x0D;&#x0A;     fa&#x0D;&#x0A;     gly" description="Copy folders" element1="WebContent/themes/explorer" element2="WebContent/themes/fa" element3="WebContent/themes/gly" files="0" flags="589830" folders="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1502083728765" target="/MyCollaborationApp/WebContent/themes" units="0" version="1.0"/>
+</session>

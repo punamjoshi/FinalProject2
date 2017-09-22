@@ -1,0 +1,33 @@
+Search <input ng-model="blogTitle">
+
+<div class="table-responsive" ng-show="currentUser.role=='Admin'">
+
+List of Blog Posts Waiting for approval
+
+<table class="table">
+<tr><th>Recent Posts nvbh
+<div >{currentUser.role}</div>
+</th></tr>
+<tr ng-repeat="blogPost in blogsWaitingForApproval | orderBy:'time':true | filter:blogTitle">
+
+<td><a href="#getBlogForApproval/{{blogPost.id}}">{{blogPost.title}}</a></td>
+<td>Created By: {{blogPost.createdBy.username}}</td>
+<td>Posted On:  {{blogPost.postedOn | date:'MM/dd/yyyy HH:mm'}}</td>
+</tr>
+</table>
+</div>
+
+
+<div class="table-responsive">
+
+List of Blog Posts 
+<table class="table">
+<tr><th>Recent Posts</th></tr>
+<tr ng-repeat="blogPost in blogsApproved | orderBy:'time':true | filter:blogTitle">
+
+<td><a href="#getBlogDetail/{{blogPost.id}}">{{blogPost.title}}</a></td>
+<td>Created By: {{blogPost.createdBy.username}}</td>
+<td>Posted On:  {{blogPost.postedOn | date:'MM/dd/yyyy HH:mm'}}</td>
+</tr>
+</table>
+</div>
